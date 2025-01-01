@@ -1,7 +1,6 @@
 * {
     font-family: 'Inter', sans-serif;
     border-radius: 0;
-    color: var(--primary-color);
     margin: 0;
     padding: 0;
 }
@@ -21,17 +20,40 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--primary-bg-color);
 }
 
 h1 {
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 4rem;
 }
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 
 hr {
     border: none;
     height: 2px;
     background-color: var(--primary-color);
     margin: 20px auto;
+}
+
+hr.dotted {
+    background: none;
+    border-top: 1px dashed var(--gray-font);
 }
 
 hr.light {
@@ -54,20 +76,32 @@ button.secondary {
     border: 2px solid var(--primary-color);
 }
 
+
 input {
     outline: none;
     padding: 0.5rem;
     width: 100%;
     border-radius: 0;
     border: 2px solid var(--primary-color);
+    background: none;
+}
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+a:hover {
+    color: var(--gray-font);
+    border-bottom: 1px solid var(--gray-font);
 }
 
 .card {
     padding: var(--spacing-md);
     width: fit-content;
-    max-width: 40rem;
     display: block;
+    border: 1px solid var(--primary-color);
 }
 
 .card.primary {
