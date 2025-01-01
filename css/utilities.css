@@ -1,0 +1,36 @@
+.text-white {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--primary-color);
+}
+
+.gray {
+    color: var(--gray-font);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: var(--spacing-sm);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-right {
+    float: right;
+}
+
+.div-center {
+    text-align: center;
+}

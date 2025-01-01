@@ -1,0 +1,11 @@
+{
+  "name": "encorecss",
+  "version": "1.0.0",
+  "description": "The Sharp and Lightweight CSS Framework",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashish Badgujar",
+  "license": "ISC"
+}

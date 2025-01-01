@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #1a1a1b;
+    --faded-primary-color: #dedede;
+    --gray-font: #535353;
+    --secondary-color: #f5f2eb;
+    --font-size: 16px;
+
+    /* Additional variables for scalability */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --font-weight-light: 300;
+    --font-weight-bold: 700;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+}
