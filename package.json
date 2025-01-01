@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/AshishBadgujar/encorecss.git"
   },
+  "homepage": "https://ashishbadgujar.github.io/encorecss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
