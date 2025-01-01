@@ -9,7 +9,6 @@
 - **Modern Design**: Sharp and contemporary styles for modern web projects.
 - **Lightweight**: Minimal CSS for fast loading and optimal performance.
 - **Customizable**: Built with CSS variables for easy theming and customization.
-- **Responsive**: Includes utility classes for responsive and flexible layouts.
 - **Modular**: Organized into separate files for variables, base styles, utilities, and components.
 
 ---
@@ -65,8 +64,8 @@ EncoreCSS provides pre-designed components for quick development:
 ### Buttons
 
 ```html
-<button class="btn-primary">Primary Button</button>
-<button class="btn-secondary">Secondary Button</button>
+<button>Primary Button</button>
+<button class="secondary">Secondary Button</button>
 ```
 
 ### Cards
@@ -83,15 +82,6 @@ EncoreCSS provides pre-designed components for quick development:
 </div>
 ```
 
-### Flex Layout
-
-```html
-<div class="flex">
-  <div>Flex Item 1</div>
-  <div>Flex Item 2</div>
-</div>
-```
-
 ### Utilities
 
 - **Text Utilities**:
@@ -99,24 +89,6 @@ EncoreCSS provides pre-designed components for quick development:
   <p class="text-white">White Text</p>
   <p class="text-dark">Dark Text</p>
   ```
-- **Alignment Utilities**:
-  ```html
-  <div class="div-center">This is centered!</div>
-  ```
-
----
-
-## Customization
-
-EncoreCSS uses CSS variables to make theming easy. Override these variables in your CSS to customize:
-
-```css
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #ecf0f1;
-  --font-size: 18px;
-}
-```
 
 ---
 
@@ -164,7 +136,7 @@ EncoreCSS is licensed under the [MIT License](LICENSE). Feel free to use it for 
 
 ## Author
 
-Created by Ashish Badgujar. For questions or feedback, feel free to reach out!
+Created by Ashish Badgujar. For questions or feedback, feel free to reach out at [ashishbadgujar124@gmail.com](mailto:ashishbadgujar124@gmail.com)
 
 ---
 

@@ -4,112 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Framework Documentation</title>
+    <title>EncoreCSS Documentation</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <h1>CSS Framework Documentation</h1>
-        <p class="gray">Test all components and utilities here</p>
-        <hr>
-    </header>
+    <div class="container">
 
-    <main>
-        <!-- Buttons Section -->
-        <section>
-            <h2>Buttons</h2>
-            <button>Default Button</button>
-            <button class="text-white">White Text Button</button>
-        </section>
 
-        <!-- Typography Section -->
-        <section>
-            <h2>Typography</h2>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <p>Paragraph text with default styling.</p>
-            <small>Small text example</small>
-        </section>
+        <header>
+            <h1>EncoreCSS Documentation</h1>
+            <p class="gray">Test all components and utilities here</p>
+            <hr>
+        </header>
 
-        <!-- Cards Section -->
-        <section>
-            <h2>Cards</h2>
-            <div class="card primary">
-                <p>Primary Card Content</p>
-            </div>
-            <div class="card secondary">
-                <p>Secondary Card Content</p>
-            </div>
-        </section>
+        <main>
+            <!-- Buttons Section -->
+            <section>
+                <h2>Buttons</h2>
+                <p>Standard buttons for your UI. Customize with classes like <code>text-white</code> for different
+                    styles.
+                </p>
+                <button>Default Button</button>
+                <button class="text-white">White Text Button</button>
+            </section>
 
-        <!-- Lists Section -->
-        <section>
-            <h2>Lists</h2>
-            <ul>
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-            </ul>
-        </section>
+            <!-- Typography Section -->
+            <section>
+                <h2>Typography</h2>
+                <p>Various heading and paragraph elements to style your text.</p>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <p>Paragraph text with default styling.</p>
+                <small>Small text example</small>
+            </section>
 
-        <!-- Utilities Section -->
-        <section>
-            <h2>Utilities</h2>
-            <div class="text-white" style="background-color: var(--primary-color); padding: var(--spacing-md);">White
-                Text on Dark Background</div>
-            <div class="text-dark" style="background-color: var(--secondary-color); padding: var(--spacing-md);">Dark
-                Text on Light Background</div>
-            <div class="flex">
-                <span>Flex Item 1</span>
-                <span>Flex Item 2</span>
-            </div>
-            <div class="float-right">This text floats to the right</div>
-        </section>
+            <!-- Cards Section -->
+            <section>
+                <h2>Cards</h2>
+                <p>Cards are flexible containers for grouping content. Customize with <code>primary</code> and
+                    <code>secondary</code> classes.
+                </p>
+                <div class="card primary">
+                    <p>Primary Card Content</p>
+                </div>
+                <div class="card secondary">
+                    <p>Secondary Card Content</p>
+                </div>
+            </section>
 
-        <!-- Alerts Section -->
-        <section>
-            <h2>Alerts</h2>
-            <div class="alert alert-success">Success Alert</div>
-            <div class="alert alert-warning">Warning Alert</div>
-            <div class="alert alert-danger">Danger Alert</div>
-        </section>
+            <!-- Lists Section -->
+            <section>
+                <h2>Lists</h2>
+                <p>Unordered list of items. Ideal for navigation or content organization.</p>
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ul>
+            </section>
 
-        <!-- Badges Section -->
-        <section>
-            <h2>Badges</h2>
-            <span class="badge badge-primary">Primary Badge</span>
-            <span class="badge badge-secondary">Secondary Badge</span>
-        </section>
+            <!-- Utilities Section -->
+            <section>
+                <h2>Utilities</h2>
+                <p>Utility classes for quick styling like text color and background.</p>
+                <div class="text-white" style="background-color: var(--primary-color); padding: var(--spacing-md);">
+                    White Text on Dark Background
+                </div>
+                <div class="text-dark" style="background-color: var(--secondary-color); padding: var(--spacing-md);">
+                    Dark Text on Light Background
+                </div>
+                <div class="flex">
+                    <span>Flex Item 1</span>
+                    <span>Flex Item 2</span>
+                </div>
+                <div class="float-right">This text floats to the right</div>
+            </section>
 
-        <!-- Modals Section -->
-        <section>
-            <h2>Modal</h2>
-            <div class="modal active">
-                <p>This is a sample modal. Add logic to show/hide it as needed.</p>
-            </div>
-        </section>
+            <!-- Alerts Section -->
+            <section>
+                <h2>Alerts</h2>
+                <p>Alert messages with different types: success, warning, danger.</p>
+                <div class="alert alert-success">Success Alert</div>
+                <div class="alert alert-warning">Warning Alert</div>
+                <div class="alert alert-danger">Danger Alert</div>
+            </section>
 
-        <!-- Forms Section -->
-        <section>
-            <h2>Forms</h2>
-            <input type="text" placeholder="Default Input">
-            <button>Submit</button>
-            <button class="secondary">Submit</button>
-            <button class="icon">x</button>
-            <button class="secondary icon">x</button>
-        </section>
-        <a href="https:encorecss.dev">Encorecss</a>
-    </main>
+            <!-- Badges Section -->
+            <section>
+                <h2>Badges</h2>
+                <p>Badges are used for labeling content or displaying counts.</p>
+                <span class="badge badge-primary">Primary Badge</span>
+                <span class="badge badge-secondary">Secondary Badge</span>
+            </section>
 
-    <footer>
-        <hr>
-        <p class="text-center gray">End of Documentation</p>
-        <hr class="dotted">
-    </footer>
+            <!-- Forms Section -->
+            <section>
+                <h2>Forms</h2>
+                <p>Standard form elements like inputs, textareas, and buttons.</p>
+                <input type="text" placeholder="Default Input">
+                <textarea name="" id="" placeholder="Textarea"></textarea>
+                <button>Submit</button>
+                <button class="secondary">Submit</button>
+                <button class="icon">x</button>
+                <button class="secondary icon">x</button>
+            </section>
+
+            <a href="https://encorecss.dev">Encorecss</a>
+        </main>
+
+        <footer>
+            <hr>
+            <p class="text-center gray">End of Documentation</p>
+            <hr class="dotted">
+        </footer>
+    </div>
 </body>
 
 </html>

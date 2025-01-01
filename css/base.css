@@ -77,7 +77,8 @@ button.secondary {
 }
 
 
-input {
+input,
+textarea {
     outline: none;
     padding: 0.5rem;
     border-radius: 0;
@@ -110,4 +111,30 @@ a:hover {
 
 .card.secondary {
     background-color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
 }

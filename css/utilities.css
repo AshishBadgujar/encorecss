@@ -14,7 +14,6 @@
     text-align: center;
 }
 
-
 .m-1 {
     margin: var(--spacing-sm);
 }
@@ -93,18 +92,6 @@
 
 .pr-2 {
     padding-right: var(--spacing-md);
-}
-
-
-
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.float-right {
-    float: right;
 }
 
 .div-center {
