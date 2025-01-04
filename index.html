@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EncoreCSS Documentation</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .card {
+            width: inherit;
+            margin: 1rem 0
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+            width: inherit
+        }
+
+        input,
+        textarea {
+            width: 40%;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-
-
         <header>
             <h1>EncoreCSS Documentation</h1>
-            <p class="gray">Test all components and utilities here</p>
-            <hr>
+            <p class="gray">Sharp, Modern, Simple, and Lightweight CSS framework</p>
+            <a href="https://github.com/AshishBadgujar/encorecss" target="_blank">GitHub</a> &nbsp; |
+            &nbsp;
+            <a href="https://www.npmjs.com/package/encorecss" target="_blank">NPM</a>
         </header>
 
         <main>
@@ -23,23 +42,41 @@
             <section>
                 <h2>Buttons</h2>
                 <p>Standard buttons for your UI. Customize with classes like <code>text-white</code> for different
-                    styles.
-                </p>
-                <button>Default Button</button>
-                <button class="text-white">White Text Button</button>
+                    styles.</p>
+                <div class="card secondary">
+                    <button>Primary Button</button>
+                    <button class="secondary">Secondary Button</button>
+                </div>
+                <pre>
+                    <code>
+        &lt;button&gt;Primary Button&lt;/button&gt;
+        &lt;button class="secondary"&gt;Secondary Button Button&lt;/button&gt; </code>
+                </pre>
             </section>
 
             <!-- Typography Section -->
             <section>
                 <h2>Typography</h2>
                 <p>Various heading and paragraph elements to style your text.</p>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <p>Paragraph text with default styling.</p>
-                <small>Small text example</small>
+                <div class="card secondary">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <p>Paragraph text with default styling.</p>
+                    <small>Small text card secondary</small>
+                </div>
+                <pre>
+                    <code>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        &lt;h2&gt;Heading 2&lt;/h2&gt;
+        &lt;h3&gt;Heading 3&lt;/h3&gt;
+        &lt;h4&gt;Heading 4&lt;/h4&gt;
+        &lt;h5&gt;Heading 5&lt;/h5&gt;
+        &lt;p&gt;Paragraph text&lt;/p&gt;
+        &lt;small&gt;Small text card secondary&lt;/small&gt;</code>
+                </pre>
             </section>
 
             <!-- Cards Section -->
@@ -48,78 +85,128 @@
                 <p>Cards are flexible containers for grouping content. Customize with <code>primary</code> and
                     <code>secondary</code> classes.
                 </p>
-                <div class="card primary">
-                    <p>Primary Card Content</p>
-                </div>
                 <div class="card secondary">
-                    <p>Secondary Card Content</p>
+                    <div class="card primary">
+                        <p>Primary Card Content</p>
+                    </div>
+                    <div class="card secondary">
+                        <p>Secondary Card Content</p>
+                    </div>
                 </div>
-            </section>
-
-            <!-- Lists Section -->
-            <section>
-                <h2>Lists</h2>
-                <p>Unordered list of items. Ideal for navigation or content organization.</p>
-                <ul>
-                    <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                </ul>
-            </section>
-
-            <!-- Utilities Section -->
-            <section>
-                <h2>Utilities</h2>
-                <p>Utility classes for quick styling like text color and background.</p>
-                <div class="text-white" style="background-color: var(--primary-color); padding: var(--spacing-md);">
-                    White Text on Dark Background
-                </div>
-                <div class="text-dark" style="background-color: var(--secondary-color); padding: var(--spacing-md);">
-                    Dark Text on Light Background
-                </div>
-                <div class="flex">
-                    <span>Flex Item 1</span>
-                    <span>Flex Item 2</span>
-                </div>
-                <div class="float-right">This text floats to the right</div>
+                <pre>
+                    <code>
+        &lt;div class="card primary"&gt;Primary Card&lt;/div&gt;
+        &lt;div class="card secondary"&gt;Secondary Card&lt;/div&gt;</code>
+                </pre>
             </section>
 
             <!-- Alerts Section -->
             <section>
                 <h2>Alerts</h2>
                 <p>Alert messages with different types: success, warning, danger.</p>
-                <div class="alert alert-success">Success Alert</div>
-                <div class="alert alert-warning">Warning Alert</div>
-                <div class="alert alert-danger">Danger Alert</div>
+                <div class="card secondary">
+                    <div class="alert alert-success">Success Alert</div>
+                    <div class="alert alert-warning">Warning Alert</div>
+                    <div class="alert alert-danger">Danger Alert</div>
+                </div>
+                <pre>
+                    <code>
+        &lt;div class="alert alert-success"&gt;Success Alert&lt;/div&gt;
+        &lt;div class="alert alert-warning"&gt;Warning Alert&lt;/div&gt;    
+        &lt;div class="alert alert-danger"&gt;Danger Alert&lt;/div&gt;</code>
+                </pre>
             </section>
 
             <!-- Badges Section -->
             <section>
                 <h2>Badges</h2>
                 <p>Badges are used for labeling content or displaying counts.</p>
-                <span class="badge badge-primary">Primary Badge</span>
-                <span class="badge badge-secondary">Secondary Badge</span>
+                <div class="card secondary">
+                    <span class="badge badge-primary">Primary Badge</span>
+                    <span class="badge badge-secondary">Secondary Badge</span>
+                </div>
+                <pre>
+                    <code>
+        &lt;span class="badge badge-primary"&gt;Primary Badge&lt;/span&gt;
+        &lt;span class="badge badge-secondary"&gt;Secondary Badge&lt;/span&gt;</code>
+                </pre>
             </section>
 
             <!-- Forms Section -->
             <section>
                 <h2>Forms</h2>
                 <p>Standard form elements like inputs, textareas, and buttons.</p>
-                <input type="text" placeholder="Default Input">
-                <textarea name="" id="" placeholder="Textarea"></textarea>
-                <button>Submit</button>
-                <button class="secondary">Submit</button>
-                <button class="icon">x</button>
-                <button class="secondary icon">x</button>
+                <div class="card secondary flex">
+                    <input type="text" placeholder="Default Input">
+                    <textarea placeholder="Textarea"></textarea>
+                    <div>
+                        <button>Submit</button>
+                        <button class="secondary">Cancel</button>
+                    </div>
+                </div>
+                <pre>
+                    <code>
+        &lt;input type="text" placeholder="Default Input"&gt;
+        &lt;textarea placeholder="Textarea"&gt;&lt;/textarea&gt;
+        &lt;button&gt;Submit&lt;/button&gt;
+        &lt;button class="secondary"&gt;Cancel&lt;/button&gt;</code>
+                </pre>
             </section>
 
-            <a href="https://encorecss.dev">Encorecss</a>
-        </main>
+            <!-- Modal Section -->
+            <section>
+                <h2>Modals</h2>
+                <div class="modal">
+                    <h3>Hello Modal</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi velit sequi debitis!</p>
+                </div>
+            </section>
 
+            <!-- Table Section -->
+            <section>
+                <h2>Table</h2>
+                <table class="table">
+                    <caption>Employee Details</caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>Engineering</td>
+                            <td>Software Engineer</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>Marketing</td>
+                            <td>Content Specialist</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Chris Johnson</td>
+                            <td>Design</td>
+                            <td>UI/UX Designer</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Emily Davis</td>
+                            <td>Sales</td>
+                            <td>Account Manager</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <br>
         <footer>
-            <hr>
-            <p class="text-center gray">End of Documentation</p>
-            <hr class="dotted">
+            <p>&copy; 2025 EncoreCSS. All rights reserved.</p>
         </footer>
     </div>
 </body>

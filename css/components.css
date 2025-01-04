@@ -52,10 +52,45 @@
     width: 90%;
     max-width: 500px;
     background-color: var(--secondary-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0rem 0 100vh rgba(0, 0, 0, 0.5);
     padding: var(--spacing-lg);
+
 }
 
 .modal.active {
     display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove gaps between table cells */
+    background-color: var(--secondary-color);
+    /* Table background */
+    border: 1px solid var(--border-color);
+    /* Border for the table */
+    font-size: var(--font-size);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: left;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+}
+
+table td {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+/* Caption Styling */
+table caption {
+    caption-side: top;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
 }

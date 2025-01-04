@@ -7,7 +7,9 @@
     --gray-font: #535353;
     --secondary-color: #eeeee1;
     --font-size: 16px;
-
+    --text-light: #eeeee1;
+    --text-dark: #111111;
+    --border-color: #535353;
     /* Additional variables for scalability */
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;

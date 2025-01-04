@@ -7,6 +7,7 @@
 
 *::-webkit-scrollbar {
     width: 0.5em;
+    height: 0.5em;
 }
 
 *::-webkit-scrollbar-track {
@@ -21,6 +22,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--primary-bg-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+pre {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
 }
 
 h1 {
@@ -43,6 +62,13 @@ h4 {
     font-weight: 400;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
+li {
+    line-height: 1.5rem;
+}
 
 hr {
     border: none;
