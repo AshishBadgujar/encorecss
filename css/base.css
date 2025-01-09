@@ -40,6 +40,8 @@ pre {
     background-color: var(--primary-color);
     color: var(--text-light);
     padding: 1rem;
+    width: inherit;
+    overflow-x: auto;
 }
 
 h1 {
